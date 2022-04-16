@@ -1,0 +1,677 @@
+ *
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x:hidden ;    
+}
+
+body
+{   
+    background-color:#E7E6E1;
+    overflow-x:hidden ;
+    padding-left: 30rem;
+}
+
+section
+{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn
+{
+    padding: .7rem 3rem;
+    background-color:#314E52;
+    color:#F7F6E7;
+    cursor: pointer;
+    margin-top:1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border:2px solid #314E52;
+}
+
+.btn i
+{
+  padding:0 1rem ;
+  font-size: 1.5rem;  
+}
+
+.btn:hover
+{
+    color:#314E52 ;
+    background: none;
+    transform: scale(1.1);
+}
+
+.heading
+{
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 4rem;
+    padding:1rem;
+    color:#3E4658;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: .2rem solid #F2A154;
+}
+
+
+header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    height: 100%;
+    width:30rem;
+    background-color:#314E52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 1rem;
+    border: 1rem solid #F2A154;
+}
+
+header .user  .name
+{
+    font-size: 28px;
+    color: #F7F6E7;
+    font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+header .navbar
+{
+    width: 85%;
+}
+
+header .navbar ul
+{
+    list-style: none;
+    padding:20px 10px ;
+}
+
+header .navbar ul li a
+{
+    display: block;
+    padding: 5px ;
+    margin: 15px 0;
+    background-color:#F7F6E7;
+    color: #314E52;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+header .navbar ul li a:hover
+{
+    background: #F2A154;
+}
+
+#menu
+{
+    position: fixed;
+    top: 2rem;
+    right: 2rem; 
+    background:#F2A154;
+    color:#314E52;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display:none;
+}
+
+
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 15rem;
+    flex-flow: column; 
+    text-align: left;
+    height: 100vh;
+    background-image:url('images/solome1.png');
+    background-repeat: no-repeat;
+}
+
+.home
+{
+    font-style: oblique;
+}
+
+.home h3
+{
+    font-size: 3rem;
+    color: #314E52;
+
+}
+
+.home span
+{
+    color: #F2A154;
+}
+
+.home h2
+{
+    font-size: 5rem;
+    color:#314E52;
+}
+
+.home p
+{
+    font-size: 5rem;
+    color: #314E52;
+    padding: .5rem;
+}
+
+
+ .about .info
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5rem;
+} 
+
+.about h1
+{
+    margin: 5rem;
+}
+
+ .about .aboutpic
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover; 
+    border-radius: 3rem;
+    /* width: 45%; */
+    
+}
+
+.about .text
+{
+    width: 600px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 45px;
+    /*width:55%;*/
+}
+
+
+ .edu .box
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+    margin-top: 3rem;
+}
+
+.edu .box .list
+{
+    width: 27rem;
+    margin: 3.5rem;
+    padding-left: 3rem;
+    border-left: .2rem solid #314E52;
+    position: relative; 
+}
+
+.edu .box .list h3
+{
+     font-size: 1.3rem;
+    background-color: #3E4E52;
+    color: #F2A154;
+    border-radius: 5rem;
+    padding:1rem 1rem; 
+    text-align: center;
+}
+
+.edu .box .list p
+{
+    font-size: 14px;  
+    padding: 4px 0;
+}
+
+.edu .box .list  span
+{
+    font-size: 16px;
+    font-weight:bolder;
+}
+
+.edu .box .list i
+{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #314E52;
+    background-color: #F2A154;
+}
+
+
+.skill .skill-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: calc(50% -30px);
+    margin-top: 40px;
+}
+
+
+.skill .skill-info p
+{
+    width:500px;
+    text-align: justify;
+    font-size: 20px;
+    margin-bottom: 45px;
+    /* width: 55%; */
+}
+
+.skill .skill-info .sum  .list
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  
+}
+
+.skill .skill-info .sum span
+{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 60px;
+
+}
+.skill .skill-info .sum .line
+{
+    height: 5px;
+    width: 100%;
+    background: #F7F6E7;
+    position: relative;
+}
+ 
+.skill .skill-info  .sum .line::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #314E52;
+}
+
+.skill .skill-info  .sum .html::before
+{
+    width:80%;
+}
+
+.skill .skill-info  .sum .css::before
+{
+    width:80%;
+}
+
+.skill .skill-info  .sum .cpp::before
+{
+    width:75%;
+}
+
+.skill .skill-info  .sum .python::before
+{
+    width:70%;
+}
+
+.skill .skill-info  .sum .java::before
+{
+    width:40%;
+}
+
+.exp .exp-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    margin-top: 50px;
+}
+
+.exp .exp-info .list
+{
+    width: calc(33%-30px);
+    background: #314E52;
+    color: #E7E6E1;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 2rem ;
+    overflow: hidden ;
+}
+
+.exp .exp-info .list .text
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.exp .exp-info .list p
+{
+    font-size: 16px;
+    text-align: left;
+}
+
+.exp .exp-info .list:hover 
+{
+    transform: scale(1.05);
+    background:#F7F6E7;
+    color:#314E52;
+}
+
+.contact .con-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+    margin-bottom: 15px;
+}
+
+.contact .con-info .list
+{
+    flex:1 2 30rem ;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .con-info h2
+{
+    color: #314E52;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.contact .con-info form
+{
+     flex:1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 10rem; 
+    margin-top: 60px;
+}
+
+.contact .con-info .box
+{
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #F7F6E7;
+    color: #314E52;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .con-info .mess
+{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+    background: #F7F6E7;
+    color: #314E52;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.contact .con-info h3
+{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #314E52;
+    padding: 1rem 0;
+    font-weight: normal;
+
+}
+
+.contact .con-info h3 i
+{
+    padding-right: 15px;
+    color: #F2A154;
+}
+
+.contact .con-info form ::placeholder
+{
+    text-transform: capitalize;
+}
+
+.contact .con-info .list a i
+{
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    margin: 20px 5px;
+    justify-content: center;
+    color: #F2A154;
+    top: -1.5rem;
+    left: -2.5rem;
+    font-size: 2rem;
+  
+
+
+}
+
+footer
+{
+    text-align: center;
+    font-size: 16px;
+    color: #314E52;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer p span
+{
+    color: #F2A154;
+}
+
+.top
+{
+    position: fixed;
+    bottom: 7rem;
+    right: 2rem;
+    z-index: 100;
+    font-size:3rem ;
+}
+
+
+
+
+
+
+
+@media(max-width:1700px)
+{
+    .about .info img
+    {
+        padding-right: 5px;
+        height: 400px;
+        width: 400px;
+    }
+    
+}  
+
+@media(max-width:1300px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+
+    .home
+    {
+        padding: 1rem 4rem;
+    }
+    .about .info img
+    {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:1104px)
+{
+    .about .info img
+    {
+        height: 400px;
+        width: 400px;
+    }
+}
+   
+
+@media(max-width:991px)
+{
+     header
+    {
+        left:-120%;
+    } 
+
+    #menu
+    {
+        display: block;
+    }
+
+    header.toggle
+    {  
+        left: 0%;
+    }
+
+    #menu:checked ~.head
+    {
+        left: 0;
+    }
+
+    body 
+    {
+        padding: 10px;
+    }
+    .about .info
+    {
+        
+        width: 100%;
+    }
+    .about .info img
+    {
+        padding-bottom: 20px;
+    }
+    
+    .exp .exp-info .list
+    {
+         width: calc(50%-15px);
+         margin-bottom: 20px;
+    }
+  
+} 
+
+
+
+
+@media (max-width:768px)
+{
+    html
+    {
+        font-size:50%;
+    }
+
+    .about .info .text
+    {
+        width: 100%;
+    }
+
+    .heading
+    {
+        width: 100%;
+    }
+
+    .skill .skill-info p
+    {
+        width: 100%;
+    }
+
+    .exp .exp-info .list
+    {
+         width: 100%
+    }
+
+    .contact .con-info form
+    {
+        margin: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width:400px)
+{
+    header
+    {
+        width:100vw; 
+    }
+
+    .heading
+    {
+        width: 100%;
+    }
+
+    .about .info .text
+    {
+        width: 100%;
+    }
+
+    .edu .box .list
+    {
+        width: 100%;
+    }
+
+    .contact .con-info form
+    {
+        margin:2rem 0;
+    } 
+}
