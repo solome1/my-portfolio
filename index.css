@@ -36,7 +36,7 @@ section
     background-color:#314E52;
     color:#F7F6E7;
     cursor: pointer;
-    margin-top:1rem;
+    margin-top:9rem;
     font-size: 2rem;
     border-radius: 1rem;
     border:2px solid #314E52;
@@ -83,6 +83,7 @@ header
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    border-radius: 0 60% 30% 0;
 }
 
 header .user img
@@ -299,6 +300,7 @@ header .navbar ul li a:hover
     text-align: justify;
     font-size: 20px;
     margin-bottom: 45px;
+    margin-top: 7rem;
     /* width: 55%; */
 }
 
@@ -388,14 +390,14 @@ header .navbar ul li a:hover
 
 .exp .exp-info .list .text
 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 
 .exp .exp-info .list p
 {
-    font-size: 16px;
+    font-size: 19px;
     text-align: left;
 }
 
@@ -495,9 +497,11 @@ header .navbar ul li a:hover
     top: -1.5rem;
     left: -2.5rem;
     font-size: 2rem;
-  
+}
 
-
+.contact .con-info .list h2
+{
+    font-size: 27px;
 }
 
 footer
@@ -584,10 +588,10 @@ footer p span
         left: 0%;
     }
 
-    #menu:checked ~.head
+    /* #menu:checked ~.head
     {
         left: 0;
-    }
+    } */
 
     body 
     {
