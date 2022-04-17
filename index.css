@@ -247,7 +247,7 @@ header .navbar ul li a:hover
 
 .edu .box .list h3
 {
-     font-size: 1.3rem;
+     font-size:18px;
     background-color: #3E4E52;
     color: #F2A154;
     border-radius: 5rem;
@@ -257,7 +257,7 @@ header .navbar ul li a:hover
 
 .edu .box .list p
 {
-    font-size: 14px;  
+    font-size: 16px;  
     padding: 4px 0;
 }
 
